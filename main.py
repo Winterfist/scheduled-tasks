@@ -21,5 +21,5 @@ for _,match in matches.iterrows():
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user=my_email, password=password)
-        connection.sendmail(from_addr=my_email, to_addrs=match["email"], msg=f"Subject:Happy birthday!\n\n{personalized_message}")
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
+        connection.sendmail(from_addr=MY_EMAIL, to_addrs=match["email"], msg=f"Subject:Happy birthday!\n\n{personalized_message}")
