@@ -4,8 +4,8 @@ from datetime import datetime
 import random
 import pandas as pd
 #----------SET UP CONNECTION CREDENTIALS--------------
-my_email = "ciurea.andrei4@gmail.com"
-password = "ojti aamk bhlh ebov"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 #----------GET CURRENT DAY AND MONTH-------------------
 today_date_day = datetime.now().day
 today_date_month = datetime.now().month
