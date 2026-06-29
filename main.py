@@ -2,8 +2,8 @@ import requests
 from twilio.rest import Client
 import os
 
-account_sid = os.environ["ACCOUNT_SID"]
-auth_token = os.environ["AUTH_TOKEN"]
+account_sid = os.environ.get["ACCOUNT_SID"]
+auth_token = os.environ.get["AUTH_TOKEN"]
 
 
 MY_LAT = 46.770920
