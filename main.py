@@ -8,7 +8,7 @@ auth_token = os.environ.get["AUTH_TOKEN"]
 
 MY_LAT = 46.770920
 MY_LONG = 23.589920
-API_KEY = os.environ["OPEN_WEATHER_API_KEY"]
+API_KEY = os.environ.get["OPEN_WEATHER_API_KEY"]
 
 parameters = {
         "lat": MY_LAT,
